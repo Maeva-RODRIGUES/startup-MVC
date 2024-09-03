@@ -1,3 +1,5 @@
+// Navbar.tsx
+
 import NavbarContent from "@/components/NavbarContent";
 
 import { User, Locale } from "@/lib/definitions";
