@@ -11,5 +11,9 @@
   "page.home.activities": "Activités",
   "page.home.activity": "{action, select, COMMENT {Tâche commentée} ACTIVATE {Travail activé} STOP {Travail arrêté} other {Activité inconnue}}",
   "page.home.team": "Équipe",
-  "page.reports.no-data": "Aucun rapport n'a été trouvé."
+  "page.reports.no-data": "Aucun rapport n'a été trouvé.",
+  "page.home.activeUsers": "Utilisateurs actifs",
+  "page.home.sales": "Ventes",
+  "page.home.conversionRate": "Taux de conversion"
+  
 }

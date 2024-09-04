@@ -113,4 +113,3 @@ export async function getActivities(): Promise<Activity[]> {
   });
 }
 
-export { User };
