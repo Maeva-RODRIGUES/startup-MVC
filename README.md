@@ -1,52 +1,71 @@
-# Next.js i18n Dashboard Starter
+# Tableau de Bord Interactif - MVP avec Next.js
 
 ![Localizely progress](https://img.shields.io/localizely/progress/314cdb30-1e80-4acf-afbf-6195d164ca77?token=9b2c2727a3334e25952ea204a6cc8708c8465e4ae300425caff926fbc627ada7&languageCode=en) ![Localizely progress](https://img.shields.io/localizely/progress/314cdb30-1e80-4acf-afbf-6195d164ca77?token=9b2c2727a3334e25952ea204a6cc8708c8465e4ae300425caff926fbc627ada7&languageCode=de) ![Localizely progress](https://img.shields.io/localizely/progress/314cdb30-1e80-4acf-afbf-6195d164ca77?token=9b2c2727a3334e25952ea204a6cc8708c8465e4ae300425caff926fbc627ada7&languageCode=fr)
 
-A dashboard template built with Next.js, Tailwind CSS, and React Intl. This template not only features internationalized routing but also showcases an array of localization features, making it an ideal starting point for building globally-friendly dashboard applications.
+Un tableau de bord interactif construit avec Next.js, Tailwind CSS et React Intl. Ce projet MVP présente un tableau de bord responsive et internationalisé, avec des fonctionnalités simulées pour l'authentification, la visualisation de données et la gestion des notifications.
 
 ![demo](/public/demo.png)
 
+## Objectif
+
+L'objectif principal de ce projet est de créer un Minimum Viable Product (MVP) pour un tableau de bord interactif, destiné à une startup. Il inclut les fonctionnalités de base suivantes :
+
+1. Authentification simulée : Utilisation d'un formulaire de connexion simple pour simuler l'accès sécurisé.
+2. Visualisation des données : Graphiques interactifs affichant des données simulées sur les utilisateurs actifs, les ventes, et les taux de conversion.
+3. UI/UX moderne : Interface utilisateur propre, moderne et responsive pour une expérience optimale sur tous les appareils.
+4. Notifications : Système de notifications simulé, qui pourrait être étendu pour inclure des notifications basées sur des événements ou des seuils.
+
+## Fonctionnalités clés
+
+1. Tableau de bord visuel : Un aperçu rapide des utilisateurs actifs, des ventes et des taux de conversion via des graphiques interactifs.
+2. Localisation (i18n) : Prise en charge multilingue grâce à l'internationalisation avec React Intl et Next.js.
+3. Filtres dynamiques : Simuler l'application de filtres pour personnaliser l'affichage des graphiques par catégorie ou période.
+
 ## Demo
 
-View a working [demo](https://nextjs-i18n-dashboard-template.vercel.app/).
+Pour voir la [demo](https://youtu.be/pxPxE9nlwug).
 
-## Getting Started
+## Installation et démarrage
 
-Run this Next.js app on your local machine by following the instructions below:
+Pour exécuter ce projet sur votre machine locale :
 
 ```bash
-# Clone the repository from GitHub
+# Clonez le dépôt GitHub
 git clone https://github.com/localizely/nextjs-i18n-dashboard-template.git
 
-# Navigate into the cloned repository
+# Accédez au répertoire cloné
 cd nextjs-i18n-dashboard-template
 
-# Install project dependencies
+# Installez les dépendances du projet
 npm install
 
-# Start the development server
+# Démarrez le serveur de développement
 npm run dev
 ```
 
-## Deploy on Vercel
+## Déploiement sur Vercel
 
-Deploy this ready-to-use template on Vercel by clicking the button below.
+Déployez ce tableau de bord interactif directement sur Vercel en cliquant sur le bouton ci-dessous.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flzoran%2Fnextjs-i18n-dashboard-template)
 
-## Translation
+## Localisation (i18n)
 
-Translating localization files can become increasingly complex, especially as your project expands. [**Localizely**](https://localizely.com/) simplifies the translation process, tracks progress, and seamlessly integrates localization into your workflow. It offers a variety of integrations, including [GitHub](https://localizely.com/github-integration/), [GitLab](https://localizely.com/gitlab-integration/), [Bitbucket](https://localizely.com/bitbucket-integration/), and [Figma](https://localizely.com/figma-integration/), along with powerful features such as [Reports and Statistics](https://localizely.com/reports-and-statistics/), [Machine Translation](https://localizely.com/machine-translation/), [Translation Memory](https://localizely.com/translation-memory/), and a [Glossary](https://localizely.com/project-glossary/).
+La localisation des fichiers devient de plus en plus complexe à mesure que votre projet grandit. Ce projet utilise[**Localizely**](https://localizely.com/) pour simplifier le processus de traduction. Localizely offre des intégrations avec des services comme GitHub, GitLab, et Figma, et des outils puissants comme les rapports, la mémoire de traduction et la traduction automatique.
 
-To simplify the translation process, navigate to [Localizely](https://app.localizely.com/register) and create a new project. Afterwards, update the `localizely.yml` file with the missing data (e.g., project_id) and integrate localization into your workflow in a manner that best suits your needs, whether that's by using the [Localizely CLI](https://localizely.com/cli/) tool or any of the available integrations.
+Pour commencer avec la localisation :
 
-## Contribution
+1. Créez un compte sur Localizely.
+2. Créez un nouveau projet sur Localizely.
+3. Mettez à jour le fichier localizely.yml avec les informations nécessaires pour intégrer la localisation dans votre flux de travail.
 
-Feel free to share your ideas and report any issues on the template's [GitHub repo](https://github.com/lzoran/nextjs-i18n-dashboard-template/issues).
+## Contributions
 
-## Useful links
+Toutes les contributions sont les bienvenues ! N'hésitez pas à partager vos idées, ou à signaler tout problème sur [GitHub repo](https://github.com/lzoran/nextjs-i18n-dashboard-template/issues).
 
-- [Next.js documentation](https://nextjs.org/docs)
-- [Next.js deployment documentation](https://nextjs.org/docs/deployment)
-- [Next.js internationalization (i18n) tutorial](https://localizely.com/blog/nextjs-i18n-tutorial/?tab=app-router)
-- [React Intl documentation](https://formatjs.io/docs/react-intl/)
+## Liens utiles
+
+- [Documentation Next.js](https://nextjs.org/docs)
+- [Documentation déploiement Next.js](https://nextjs.org/docs/deployment)
+- [Tutoriel Next.js sur l'internationalisation (i18n)](https://localizely.com/blog/nextjs-i18n-tutorial/?tab=app-router)
+- [Documentation React Intl](https://formatjs.io/docs/react-intl/)

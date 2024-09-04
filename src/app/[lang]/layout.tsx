@@ -12,7 +12,7 @@ import { i18n } from "../../../i18n-config";
 import "@/app/globals.css";
 
 export const metadata = {
-  title: "MVC Next dashboard",
+  title: "MVP Next dashboard",
   description: "How to create internationalized MVC dasboard with Next.js",
 };
 

@@ -54,7 +54,7 @@ export default function Charts({
     labels: activeUsersData.map(data => data.date),
     datasets: [
       {
-        label: 'Utilisateurs Actifs',
+        label: 'Utilisateurs actifs',
         data: activeUsersData.map(data => data.users),
         backgroundColor: '#8884d8',
       },
@@ -84,10 +84,27 @@ export default function Charts({
     ],
   };
 
+   // Options pour configurer la légende à gauche
+   const pieChartOptions = {
+    responsive: true,
+    maintainAspectRatio: false, // Permet de gérer la taille manuellement
+    plugins: {
+      legend: {
+        display: true,
+        position: 'top', // Place la légende au-dessus
+        align: 'start',   // Alignement des éléments de la légende à gauche
+        labels: {
+          padding: 5,    // Espacement autour des éléments de la légende
+          boxWidth: 20,  // Taille de la boîte colorée de la légende
+        },
+      },
+    },
+  };
+  
   return (
-    <>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {/* Utilisateurs Actifs - Graphique à Barres */}
-      <div>
+      <div className="p-2">
         <Card>
           <CardHeader>{activeUsersMessage}</CardHeader>
           <CardBody>
@@ -97,7 +114,7 @@ export default function Charts({
       </div>
 
       {/* Ventes - Graphique Linéaire */}
-      <div>
+      <div className="p-2">
         <Card>
           <CardHeader>{salesMessage}</CardHeader>
           <CardBody>
@@ -106,15 +123,23 @@ export default function Charts({
         </Card>
       </div>
 
-      {/* Taux de Conversion - Graphique Circulaire */}
-      <div>
+       {/* Taux de Conversion - Graphique Circulaire */}
+       <div className="p-2">
         <Card>
           <CardHeader>{conversionRateMessage}</CardHeader>
           <CardBody>
-            <Pie data={pieChartData} />
+            <div className="flex flex-col items-center">
+              {/* Légende alignée à gauche */}
+              <div className="self-start">
+              </div>
+              {/* Graphique circulaire centré */}
+              <div className="w-48 h-48">
+              <Pie data={pieChartData} options={pieChartOptions} />
+              </div>
+            </div>
           </CardBody>
         </Card>
       </div>
-    </>
+    </div>
   );
 }
