@@ -31,10 +31,10 @@ Pour exécuter ce projet sur votre machine locale :
 
 ```bash
 # Clonez le dépôt GitHub
-git clone https://github.com/localizely/nextjs-i18n-dashboard-template.git
+git clone https://github.com/Maeva-RODRIGUES/startup-MVP
 
 # Accédez au répertoire cloné
-cd nextjs-i18n-dashboard-template
+cd mvc_dashboard
 
 # Installez les dépendances du projet
 npm install
@@ -61,8 +61,7 @@ Pour commencer avec la localisation :
 
 ## Contributions
 
-Toutes les contributions sont les bienvenues ! N'hésitez pas à partager vos idées, ou à signaler tout problème sur [GitHub repo](https://github.com/lzoran/nextjs-i18n-dashboard-template/issues).
-
+Toutes les contributions sont les bienvenues ! N'hésitez pas à me partager vos idées.
 ## Liens utiles
 
 - [Documentation Next.js](https://nextjs.org/docs)
