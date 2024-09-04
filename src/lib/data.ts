@@ -112,3 +112,5 @@ export async function getActivities(): Promise<Activity[]> {
     setTimeout(() => resolve(activities), 500);
   });
 }
+
+export { User };

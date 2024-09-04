@@ -1,8 +1,7 @@
 // layout
 
-import Navbar from "@/components/Navbar";
 import Content from "@/components/Content";
-import Sidebar from "@/components/Sidebar";
+import ClientNavbarWrapper from "@/components/ClientNavbarWrapper";
 import ClientWrapper from "@/components/ClientWrapper";
 
 import { getUser } from "@/lib/data";
@@ -26,6 +25,7 @@ export default async function Layout({ children, params }: { children: React.Rea
   const locale = params.lang;
   const user = await getUser();
 
+
   if (!locale) {
     throw new Error("Locale is not defined");
   }
@@ -34,10 +34,9 @@ export default async function Layout({ children, params }: { children: React.Rea
   return (
     <html lang={locale}>
       <body className="min-h-screen bg-gray-100">
-      <Navbar locale={locale} user={user} />
+        <ClientNavbarWrapper locale={locale} user={user} />
         <ClientWrapper>
           <Content>{children}</Content>
-        <Sidebar locale={params.lang} />
         </ClientWrapper>
       </body>
     </html>
